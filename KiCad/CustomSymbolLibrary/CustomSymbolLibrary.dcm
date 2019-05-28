@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT3081_TO-220
+D Linear regulator, 1.5A low dropout
+$ENDCMP
+#
+$CMP LT3092xSOT223
+D 200mA 2-Terminal Programmable Current Source, SOT-223
+K current source
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3092fc.pdf
+$ENDCMP
+#
+$CMP LTC1624CS8
+D High Efficiency N-Channel Switching Regulator Controller, SOIC-8
+K Switching Regulator Controller
+F https://www.analog.com/media/en/technical-documentation/data-sheets/1624f.pdf
+$ENDCMP
+#
+#End Doc Library
