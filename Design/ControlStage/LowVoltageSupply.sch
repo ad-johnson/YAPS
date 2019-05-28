@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+LIBS:PowerSupply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "YAPS - Regulated Power Supply"
+Date "2019-05-26"
+Rev "0.1"
+Comp "Andrew Johnson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1000 1000 0    50   Input ~ 0
+PI
+Wire Wire Line
+	1000 1000 1300 1000
+$Comp
+L Device:C C27
+U 1 1 5CAA62A2
+P 1300 1250
+F 0 "C27" H 1415 1296 50  0000 L CNN
+F 1 "0.33uF" H 1415 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1338 1100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1901289.pdf?_ga=2.8331319.464475340.1555178862-441347304.1541859637&_gac=1.238225716.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE" H 1300 1250 50  0001 C CNN
+F 4 "2320844" H 1300 1250 50  0001 C CNN "Farnell Code"
+	1    1300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1100 1300 1000
+Connection ~ 1300 1000
+Wire Wire Line
+	1300 1400 1300 1650
+$Comp
+L power:GNDPWR #PWR039
+U 1 1 5CAA69DB
+P 1300 1650
+F 0 "#PWR039" H 1300 1400 50  0001 C CNN
+F 1 "GNDPWR" H 1305 1477 50  0000 C CNN
+F 2 "" H 1300 1650 50  0001 C CNN
+F 3 "" H 1300 1650 50  0001 C CNN
+	1    1300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U7
+U 1 1 5CAA760D
+P 2600 1000
+F 0 "U7" H 2600 1242 50  0000 C CNN
+F 1 "LM7805_TO220" H 2600 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2600 1225 50  0001 C CIN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=UA78&fileType=pdf" H 2600 950 50  0001 C CNN
+F 4 "2323602" H 2600 1000 50  0001 C CNN "Farnell Code"
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1300 2600 1650
+$Comp
+L power:GNDPWR #PWR040
+U 1 1 5CAA901A
+P 2600 1650
+F 0 "#PWR040" H 2600 1400 50  0001 C CNN
+F 1 "GNDPWR" H 2605 1477 50  0000 C CNN
+F 2 "" H 2600 1650 50  0001 C CNN
+F 3 "" H 2600 1650 50  0001 C CNN
+	1    2600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 5CAAB531
+P 3200 1250
+F 0 "C28" H 3315 1296 50  0000 L CNN
+F 1 "0.1uF" H 3315 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 1100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1901289.pdf?_ga=2.217959571.464475340.1555178862-441347304.1541859637&_gac=1.205178532.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE" H 3200 1250 50  0001 C CNN
+F 4 "2320839" H 3200 1250 50  0001 C CNN "Farnell Code"
+	1    3200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1100 3200 1000
+Wire Wire Line
+	3200 1400 3200 1650
+$Comp
+L power:GNDPWR #PWR041
+U 1 1 5CAAB539
+P 3200 1650
+F 0 "#PWR041" H 3200 1400 50  0001 C CNN
+F 1 "GNDPWR" H 3205 1477 50  0000 C CNN
+F 2 "" H 3200 1650 50  0001 C CNN
+F 3 "" H 3200 1650 50  0001 C CNN
+	1    3200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1000 3200 1000
+Connection ~ 3200 1000
+Text HLabel 4300 1000 2    50   Input ~ 0
+REG_5v
+Wire Wire Line
+	1300 1000 2300 1000
+Wire Wire Line
+	3200 1000 4300 1000
+$EndSCHEMATC

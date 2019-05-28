@@ -1,0 +1,350 @@
+EESchema Schematic File Version 4
+LIBS:PowerSupply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title "YAPS - Regulated Power Supply"
+Date "2019-05-26"
+Rev "0.1"
+Comp "Andrew Johnson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4000 1200 4500 1200
+Connection ~ 4000 1200
+Wire Wire Line
+	3000 1200 4000 1200
+Wire Wire Line
+	4000 1700 4000 1600
+$Comp
+L power:GNDS #PWR?
+U 1 1 5CC517CB
+P 4000 1700
+AR Path="/5CC517CB" Ref="#PWR?"  Part="1" 
+AR Path="/5CAC1458/5CC517CB" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 4000 1450 50  0001 C CNN
+F 1 "GNDS" H 4005 1527 50  0000 C CNN
+F 2 "" H 4000 1700 50  0001 C CNN
+F 3 "" H 4000 1700 50  0001 C CNN
+	1    4000 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1300 4000 1200
+$Comp
+L Device:C C?
+U 1 1 5CC517C4
+P 4000 1450
+AR Path="/5CC517C4" Ref="C?"  Part="1" 
+AR Path="/5CAC1458/5CC517C4" Ref="C26"  Part="1" 
+F 0 "C26" H 4115 1496 50  0000 L CNN
+F 1 "1uF" H 4115 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4038 1300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2189091.pdf?_ga=2.8850352.464475340.1555178862-441347304.1541859637&_gac=1.217835810.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE" H 4000 1450 50  0001 C CNN
+F 4 "2688485" H 4000 1450 50  0001 C CNN "Farnell Code"
+	1    4000 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 2100
+Wire Wire Line
+	1000 1950 1350 1950
+Text HLabel 2750 3000 3    50   Input ~ 0
+SCL
+Text HLabel 1300 3000 3    50   Input ~ 0
+SDA
+Text HLabel 4500 1200 2    50   Input ~ 0
+POUT
+Wire Wire Line
+	1300 2800 1300 3000
+Connection ~ 1300 2800
+Wire Wire Line
+	3350 2800 1300 2800
+Wire Wire Line
+	3350 2550 3350 2800
+Wire Wire Line
+	1300 2250 1300 2800
+Wire Wire Line
+	1500 2250 1300 2250
+Wire Wire Line
+	3350 2100 4500 2100
+Connection ~ 3350 2100
+Wire Wire Line
+	3350 2250 3350 2100
+$Comp
+L Device:R R22
+U 1 1 5CAC912C
+P 3350 2400
+F 0 "R22" H 3420 2446 50  0000 L CNN
+F 1 "2K2" H 3420 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 2400 50  0001 C CNN
+F 3 "~" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2650 2750 3000
+Connection ~ 2750 2650
+Wire Wire Line
+	3000 2650 2750 2650
+Wire Wire Line
+	3000 2550 3000 2650
+Wire Wire Line
+	3000 2100 3350 2100
+Connection ~ 3000 2100
+Wire Wire Line
+	3000 2250 3000 2100
+$Comp
+L Device:R R21
+U 1 1 5CAC7EFC
+P 3000 2400
+F 0 "R21" H 3070 2446 50  0000 L CNN
+F 1 "2K2" H 3070 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2930 2400 50  0001 C CNN
+F 3 "~" H 3000 2400 50  0001 C CNN
+	1    3000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2250 2750 2650
+Wire Wire Line
+	2600 2250 2750 2250
+Text HLabel 4500 2100 2    50   Input ~ 0
+REG5VIN
+Wire Wire Line
+	2600 2100 3000 2100
+Connection ~ 3000 1200
+Wire Wire Line
+	3000 1800 3000 1200
+Wire Wire Line
+	2600 1800 3000 1800
+NoConn ~ 2600 1650
+$Comp
+L power:GNDS #PWR037
+U 1 1 5CAC65E9
+P 3000 1950
+F 0 "#PWR037" H 3000 1700 50  0001 C CNN
+F 1 "GNDS" V 3005 1822 50  0000 R CNN
+F 2 "" H 3000 1950 50  0001 C CNN
+F 3 "" H 3000 1950 50  0001 C CNN
+	1    3000 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 1950 3000 1950
+$Comp
+L power:GNDS #PWR036
+U 1 1 5CAC59B3
+P 1000 1950
+F 0 "#PWR036" H 1000 1700 50  0001 C CNN
+F 1 "GNDS" V 1005 1822 50  0000 R CNN
+F 2 "" H 1000 1950 50  0001 C CNN
+F 3 "" H 1000 1950 50  0001 C CNN
+	1    1000 1950
+	0    1    1    0   
+$EndComp
+Connection ~ 1350 1950
+Wire Wire Line
+	1350 1650 1350 1950
+Wire Wire Line
+	1500 1650 1350 1650
+Wire Wire Line
+	1450 1950 1350 1950
+Connection ~ 1450 1950
+Wire Wire Line
+	1450 1800 1450 1950
+Wire Wire Line
+	1500 1800 1450 1800
+Wire Wire Line
+	1500 1950 1450 1950
+Wire Wire Line
+	2800 1200 3000 1200
+Connection ~ 2800 1200
+Wire Wire Line
+	2800 1200 2800 1500
+Wire Wire Line
+	2700 1200 2800 1200
+Wire Wire Line
+	2600 1500 2800 1500
+Connection ~ 2700 1200
+Wire Wire Line
+	2700 1350 2700 1200
+Wire Wire Line
+	2600 1350 2700 1350
+Wire Wire Line
+	2600 1200 2700 1200
+Wire Wire Line
+	1350 1200 1450 1200
+Connection ~ 1350 1200
+Wire Wire Line
+	1350 1500 1350 1200
+Wire Wire Line
+	1500 1500 1350 1500
+Wire Wire Line
+	1450 1200 1500 1200
+Connection ~ 1450 1200
+Wire Wire Line
+	1450 1350 1450 1200
+Wire Wire Line
+	1500 1350 1450 1350
+$Comp
+L CustomSymbolLibrary:INA260 U6
+U 1 1 5CAC2CB4
+P 2050 1700
+F 0 "U6" H 2050 2465 50  0000 C CNN
+F 1 "INA260" H 2050 2374 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 1200 2600 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina260" H 1200 2600 50  0001 C CNN
+F 4 "296-47777-1-ND" H 2050 1700 50  0001 C CNN "Digikey Code"
+	1    2050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1200 1350 1200
+Text HLabel 1000 1200 0    50   Input ~ 0
+PI
+$Comp
+L Connector_Generic:Conn_01x06 J6
+U 1 1 5CD90C86
+P 1050 3850
+F 0 "J6" H 1000 4250 50  0000 L CNN
+F 1 "Conn_01x06" H 850 4350 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 1050 3850 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/022272061_sd.pdf" H 1050 3850 50  0001 C CNN
+F 4 "WM4115-ND + WM1579-ND + WM2623-ND" H 1050 3850 50  0001 C CNN "Digikey Code"
+	1    1050 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 3550 1450 3550
+Wire Wire Line
+	1250 3750 1450 3750
+Wire Wire Line
+	1250 3950 1450 3950
+$Comp
+L Device:R R23
+U 1 1 5CD958CA
+P 2150 3650
+F 0 "R23" V 1943 3650 50  0000 C CNN
+F 1 "10K 1%" V 2034 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 3650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE" H 2150 3650 50  0001 C CNN
+F 4 "2694096" V 2150 3650 50  0001 C CNN "Farnell Code"
+	1    2150 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 3650 1900 3650
+$Comp
+L Device:R R25
+U 1 1 5CD9AC96
+P 3450 3850
+F 0 "R25" V 3243 3850 50  0000 C CNN
+F 1 "10K 1%" V 3334 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3380 3850 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE" H 3450 3850 50  0001 C CNN
+F 4 "2694096" V 3450 3850 50  0001 C CNN "Farnell Code"
+	1    3450 3850
+	0    1    1    0   
+$EndComp
+Text Label 1450 3550 0    50   ~ 0
+REG5VIN
+Text Label 1450 3750 0    50   ~ 0
+REG5VIN
+Text Label 1450 3950 0    50   ~ 0
+REG5VIN
+$Comp
+L Device:R R24
+U 1 1 5CD9B615
+P 2550 4400
+F 0 "R24" V 2343 4400 50  0000 C CNN
+F 1 "10K 1%" V 2434 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 4400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE" H 2550 4400 50  0001 C CNN
+F 4 "2694096" V 2550 4400 50  0001 C CNN "Farnell Code"
+	1    2550 4400
+	0    1    1    0   
+$EndComp
+Text HLabel 2050 3350 2    50   Input ~ 0
+TMOSOUT
+Wire Wire Line
+	2050 3350 1900 3350
+Wire Wire Line
+	1900 3350 1900 3650
+Connection ~ 1900 3650
+Wire Wire Line
+	1900 3650 2000 3650
+$Comp
+L power:GNDS #PWR01
+U 1 1 5CD9D54C
+P 2500 3650
+F 0 "#PWR01" H 2500 3400 50  0001 C CNN
+F 1 "GNDS" V 2505 3522 50  0000 R CNN
+F 2 "" H 2500 3650 50  0001 C CNN
+F 3 "" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 3650 2500 3650
+Wire Wire Line
+	1250 3850 3100 3850
+Wire Wire Line
+	3600 3850 3800 3850
+$Comp
+L power:GNDS #PWR043
+U 1 1 5CDA0FE4
+P 3800 3850
+F 0 "#PWR043" H 3800 3600 50  0001 C CNN
+F 1 "GNDS" V 3805 3722 50  0000 R CNN
+F 2 "" H 3800 3850 50  0001 C CNN
+F 3 "" H 3800 3850 50  0001 C CNN
+	1    3800 3850
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3350 3500 2    50   Input ~ 0
+TBROUT
+Wire Wire Line
+	3350 3500 3100 3500
+Wire Wire Line
+	3100 3500 3100 3850
+Connection ~ 3100 3850
+Wire Wire Line
+	3100 3850 3300 3850
+Wire Wire Line
+	1250 4050 1500 4050
+Wire Wire Line
+	1500 4050 1500 4400
+Wire Wire Line
+	1500 4400 2250 4400
+$Comp
+L power:GNDS #PWR042
+U 1 1 5CDA4F17
+P 3000 4400
+F 0 "#PWR042" H 3000 4150 50  0001 C CNN
+F 1 "GNDS" V 3005 4272 50  0000 R CNN
+F 2 "" H 3000 4400 50  0001 C CNN
+F 3 "" H 3000 4400 50  0001 C CNN
+	1    3000 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 4400 2700 4400
+Text HLabel 2450 4050 2    50   Input ~ 0
+TCASEOUT
+Wire Wire Line
+	2450 4050 2250 4050
+Wire Wire Line
+	2250 4050 2250 4400
+Connection ~ 2250 4400
+Wire Wire Line
+	2250 4400 2400 4400
+Text Notes 1000 4750 0    50   ~ 0
+5 & 6: Thermistor attached to MOSFET\n3 & 4: Thermistor attached to Bridge Rectifier\n1 & 2: Thermistor in case
+Text Label 4150 2100 3    50   ~ 0
+REG5VIN
+$EndSCHEMATC
