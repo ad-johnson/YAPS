@@ -16,4 +16,8 @@ K Switching Regulator Controller
 F https://www.analog.com/media/en/technical-documentation/data-sheets/1624f.pdf
 $ENDCMP
 #
+$CMP TSR1-24xx
+D DC/DC Step-Down Switching Regulator 1A LM78XX replacement
+$ENDCMP
+#
 #End Doc Library
