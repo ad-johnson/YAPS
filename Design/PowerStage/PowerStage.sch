@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "YAPS Power Stage"
-Date "2019-05-26"
-Rev "1.0"
+Date "2019-06-08"
+Rev "1.1"
 Comp "Andrew Johnson"
 Comment1 ""
 Comment2 ""
@@ -63,12 +63,12 @@ F 4 "CA04834" H 4900 2850 50  0001 C CNN "CPC Code"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Bridge_+AA- D1
+L Device:D_Bridge_-AA+ D1
 U 1 1 5CCB53B4
 P 3450 2650
 F 0 "D1" H 3794 2696 50  0000 L CNN
 F 1 "GBU603" H 3794 2605 50  0000 L CNN
-F 2 "CustomFootprintLibrary:Diode_Bridge_23.0x3.5x10.0mm_P5.0mm" H 3450 2650 50  0001 C CNN
+F 2 "CustomFootprintLibrary:Diode_Bridge_23.0x3.5mm_P5.0mm" H 3450 2650 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/41665.pdf" H 3450 2650 50  0001 C CNN
 F 4 "SC09284" H 3450 2650 50  0001 C CNN "CPC Code"
 	1    3450 2650

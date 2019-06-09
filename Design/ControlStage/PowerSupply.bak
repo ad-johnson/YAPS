@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "YAPS - Regulated Power Supply"
-Date "2019-05-26"
-Rev "0.1"
+Date "2019-06-08"
+Rev "1.1"
 Comp "Andrew Johnson"
 Comment1 "Output Voltage: 0 - 15Vdc"
 Comment2 "Output Current: 0 - 3A"

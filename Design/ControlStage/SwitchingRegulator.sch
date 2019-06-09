@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "YAPS - Regulated Power Supply"
-Date "2019-05-26"
-Rev "0.1"
+Date "2019-06-08"
+Rev "1.1"
 Comp "Andrew Johnson"
 Comment1 ""
 Comment2 ""
@@ -33,7 +33,7 @@ L power:GNDS #PWR010
 U 1 1 5CA6497F
 P 4600 3050
 F 0 "#PWR010" H 4600 2800 50  0001 C CNN
-F 1 "GNDS" H 4600 2700 50  0000 C CNN
+F 1 "GNDS" H 4600 2900 50  0000 C CNN
 F 2 "" H 4600 3050 50  0001 C CNN
 F 3 "" H 4600 3050 50  0001 C CNN
 	1    4600 3050
@@ -270,7 +270,7 @@ U 1 1 5CA7CAF8
 P 6650 4400
 F 0 "Q2" H 6841 4354 50  0000 L CNN
 F 1 "2N3906" H 6841 4445 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6850 4325 50  0001 L CIN
+F 2 "CustomFootprintLibrary:TO-92_Inline_Wide" H 6850 4325 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 6650 4400 50  0001 L CNN
 F 4 "2453753" H 6650 4400 50  0001 C CNN "Farnell Code"
 	1    6650 4400

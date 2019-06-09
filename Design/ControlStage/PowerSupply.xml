@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/andrewjohnson/OneDrive/Documents/Electronics/Power Supply/Instructables/Design/PowerSupply.sch</source>
-    <date>Sunday, 14 April 2019 at 14:15:40</date>
+    <source>/Users/andrewjohnson/OneDrive/Documents/Electronics/Power Supply/Instructables/Design/ControlStage/PowerSupply.sch</source>
+    <date>Tuesday, 28 May 2019 at 13:02:03</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Regulated Power Supply</title>
-        <company/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
         <rev>0.1</rev>
-        <date/>
+        <date>2019-05-26</date>
         <source>PowerSupply.sch</source>
         <comment number="1" value="Output Voltage: 0 - 15Vdc"/>
         <comment number="2" value="Output Current: 0 - 3A"/>
@@ -19,10 +19,10 @@
     </sheet>
     <sheet number="2" name="/Switching Regulator/" tstamps="/5CA4902E/">
       <title_block>
-        <title>Step-down regulation</title>
-        <company/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
         <rev>0.1</rev>
-        <date/>
+        <date>2019-05-26</date>
         <source>SwitchingRegulator.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -32,10 +32,10 @@
     </sheet>
     <sheet number="3" name="/Current Source/" tstamps="/5CA92318/">
       <title_block>
-        <title>Current Source</title>
-        <company/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
         <rev>0.1</rev>
-        <date/>
+        <date>2019-05-26</date>
         <source>CurrentSource.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -45,10 +45,10 @@
     </sheet>
     <sheet number="4" name="/Linear Regulator 1/" tstamps="/5CAA5A19/">
       <title_block>
-        <title>Current Regulation</title>
-        <company/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
         <rev>0.1</rev>
-        <date/>
+        <date>2019-05-26</date>
         <source>LinearRegulator.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -58,10 +58,10 @@
     </sheet>
     <sheet number="5" name="/-Ve Power Supply/" tstamps="/5CAB0D5A/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
+        <rev>0.1</rev>
+        <date>2019-05-26</date>
         <source>NegPowerSupply.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -71,10 +71,10 @@
     </sheet>
     <sheet number="6" name="/Output Monitoring/" tstamps="/5CAC1458/">
       <title_block>
-        <title>Output Monitoring</title>
-        <company/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
         <rev>0.1</rev>
-        <date/>
+        <date>2019-05-26</date>
         <source>Output_Monitor.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -84,10 +84,10 @@
     </sheet>
     <sheet number="7" name="/Low Voltage Supply/" tstamps="/5CAA5FE8/">
       <title_block>
-        <title>Regulated 5V Output</title>
-        <company/>
+        <title>YAPS - Regulated Power Supply</title>
+        <company>Andrew Johnson</company>
         <rev>0.1</rev>
-        <date/>
+        <date>2019-05-26</date>
         <source>LowVoltageSupply.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -97,157 +97,208 @@
     </sheet>
   </design>
   <components>
-    <comp ref="J1">
+    <comp ref="J2">
       <value>Conn_01x02</value>
       <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <datasheet>https://cpc.farnell.com/phoenix-contact/1729128/terminal-block-pcb-5-08mm-2way/dp/CN14697?st=pcb%20terminal%20blocks</datasheet>
+      <fields>
+        <field name="CPC Code">CN14697</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA25B75</tstamp>
     </comp>
     <comp ref="C1">
       <value>100uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:CP_Elec_8x10</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2100017.pdf?_ga=2.209634455.464475340.1555178862-441347304.1541859637&amp;_gac=1.250357170.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">8823391</field>
+      </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA26A2E</tstamp>
     </comp>
     <comp ref="C2">
-      <value>100nF</value>
-      <datasheet>~</datasheet>
+      <value>0.1uF</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.217959571.464475340.1555178862-441347304.1541859637&amp;_gac=1.205178532.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320839</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CA273A1</tstamp>
     </comp>
     <comp ref="J5">
       <value>Conn_01x02</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CA929E2</tstamp>
-    </comp>
-    <comp ref="J2">
-      <value>Conn_01x02</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CA94F13</tstamp>
-    </comp>
-    <comp ref="J3">
-      <value>Conn_01x02</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CA98974</tstamp>
-    </comp>
-    <comp ref="J8">
-      <value>Conn_01x02</value>
-      <datasheet>~</datasheet>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>https://cpc.farnell.com/phoenix-contact/1729128/terminal-block-pcb-5-08mm-2way/dp/CN14697?st=pcb%20terminal%20blocks</datasheet>
+      <fields>
+        <field name="CPC Code">CN14697</field>
+      </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CACEB04</tstamp>
     </comp>
-    <comp ref="J7">
-      <value>Conn_01x04</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <comp ref="J4">
+      <value>Conn_01x08</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/022272081_sd.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">WM4117-ND + WM1581-ND + WM2623-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x08" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CAD2E2D</tstamp>
     </comp>
-    <comp ref="J6">
-      <value>Conn_01x02</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <comp ref="J3">
+      <value>Conn_01x06</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/022272061_sd.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">WM4115-ND + WM1579-ND + WM2623-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CC207AE</tstamp>
     </comp>
-    <comp ref="J4">
-      <value>Conn_01x03</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <comp ref="J1">
+      <value>Conn_01x02</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/022272021_sd.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">WM4111-ND + WM1575-ND + WM2623-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CC2470F</tstamp>
+      <tstamp>5CD715D4</tstamp>
+    </comp>
+    <comp ref="NT1">
+      <value>Net-Tie_2</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad2.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Net-Tie_2" description="Net tie, 2 pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE59423</tstamp>
     </comp>
     <comp ref="U1">
       <value>LTC1624CS8</value>
       <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/1624f.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">LTC1624CS8#PBF-ND</field>
+      </fields>
       <libsource lib="CustomSymbolLibrary" part="LTC1624CS8" description="High Efficiency N-Channel Switching Regulator Controller, SOIC-8"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA61AD6</tstamp>
     </comp>
-    <comp ref="C4">
-      <value>100nF</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
-      <tstamp>5CA6334F</tstamp>
-    </comp>
     <comp ref="C3">
       <value>470pF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2620235.pdf?_ga=2.210698384.464475340.1555178862-441347304.1541859637&amp;_gac=1.6496774.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2896583</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA65142</tstamp>
     </comp>
-    <comp ref="R3">
+    <comp ref="R1">
       <value>6K8</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.248842498.464475340.1555178862-441347304.1541859637&amp;_gac=1.246025520.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447711</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA65D18</tstamp>
     </comp>
-    <comp ref="R4">
+    <comp ref="R2">
       <value>10m</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/chip-resistor/RU2012FR010CS.jsp</datasheet>
+      <fields>
+        <field name="Digikey Code">1276-6156-1-ND</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA6A7C1</tstamp>
     </comp>
     <comp ref="Q1">
-      <value>Si4412DY</value>
-      <libsource lib="Transistor_FET" part="2N7000" description="0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"/>
+      <value>IRF3205</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.irf.com/product-info/datasheets/data/irf3205.pdf</datasheet>
+      <fields>
+        <field name="Farnell Code">1704017</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="IRF3205" description="110A Id, 55V Vds, Single N-Channel HEXFET Power MOSFET, 8mOhm Ron, TO-220AB"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA6B24C</tstamp>
     </comp>
-    <comp ref="C5">
-      <value>100nF</value>
-      <datasheet>~</datasheet>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.217959571.464475340.1555178862-441347304.1541859637&amp;_gac=1.205178532.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320839</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA7229A</tstamp>
     </comp>
     <comp ref="D1">
       <value>MBRS340T3G</value>
-      <datasheet>http://www.farnell.com/datasheets/2353896.pdf?_ga=2.72542163.1189564375.1554296868-441347304.1541859637&amp;_gac=1.241902902.1554388648.EAIaIQobChMIx9vrudS24QIVTLvtCh1GjgeCEAAYAyAAEgLt_PD_BwE</datasheet>
+      <footprint>CustomFootprintLibrary:D_SMC_Handsoldering</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2353896.pdf?_ga=2.180209569.464475340.1555178862-441347304.1541859637&amp;_gac=1.137545092.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">9557377</field>
+      </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA7518F</tstamp>
     </comp>
     <comp ref="L1">
       <value>10uH</value>
-      <datasheet>~</datasheet>
+      <footprint>CustomFootprintLibrary:L_Bourns_SRP1245A_Handsoldering</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2366823.pdf?_ga=2.215533842.464475340.1555178862-441347304.1541859637&amp;_gac=1.212477472.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2434072</field>
+      </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA77123</tstamp>
     </comp>
-    <comp ref="C6">
+    <comp ref="C8">
       <value>1nF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.17629372.464475340.1555178862-441347304.1541859637&amp;_gac=1.205317668.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320837</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA79503</tstamp>
     </comp>
-    <comp ref="R5">
+    <comp ref="R3">
       <value>1K</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.189204526.464475340.1555178862-441347304.1541859637&amp;_gac=1.183224978.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447587</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA79CB1</tstamp>
     </comp>
-    <comp ref="R7">
+    <comp ref="R5">
       <value>100K</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.223677342.464475340.1555178862-441347304.1541859637&amp;_gac=1.245572144.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447551</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA7A613</tstamp>
@@ -255,49 +306,76 @@
     <comp ref="Q2">
       <value>2N3906</value>
       <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf</datasheet>
+      <datasheet>https://www.onsemi.com/pub/Collateral/2N3906-D.PDF</datasheet>
+      <fields>
+        <field name="Farnell Code">2453753</field>
+      </fields>
       <libsource lib="Transistor_BJT" part="2N3906" description="-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA7CAF8</tstamp>
     </comp>
-    <comp ref="R6">
+    <comp ref="R4">
       <value>5K</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2310790.pdf?_ga=2.253037836.464475340.1555178862-441347304.1541859637&amp;_gac=1.209347238.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2616759</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA7E4C6</tstamp>
     </comp>
-    <comp ref="R8">
+    <comp ref="R6">
       <value>100K</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.223677342.464475340.1555178862-441347304.1541859637&amp;_gac=1.245572144.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447551</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA7EBAB</tstamp>
     </comp>
-    <comp ref="C8">
+    <comp ref="C10">
       <value>100uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:CP_Elec_8x10</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2100017.pdf?_ga=2.209634455.464475340.1555178862-441347304.1541859637&amp;_gac=1.250357170.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">8823391</field>
+      </fields>
       <libsource lib="Device" part="CP" description="Polarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA824D3</tstamp>
     </comp>
-    <comp ref="C7">
+    <comp ref="C9">
       <value>1nF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.17629372.464475340.1555178862-441347304.1541859637&amp;_gac=1.205317668.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320837</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CA90587</tstamp>
     </comp>
-    <comp ref="C28">
+    <comp ref="C6">
       <value>1nF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.17629372.464475340.1555178862-441347304.1541859637&amp;_gac=1.205317668.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320837</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CAF8B1F</tstamp>
     </comp>
-    <comp ref="C27">
+    <comp ref="C4">
       <value>100pF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2750056.pdf?_ga=2.176220192.464475340.1555178862-441347304.1541859637&amp;_gac=1.238813876.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2905173</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Switching Regulator/" tstamps="/5CA4902E/"/>
       <tstamp>5CAFD7C4</tstamp>
@@ -306,236 +384,372 @@
       <value>LT3092xSOT223</value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/3092fc.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">LT3092ETS8#TRPBFCT-ND</field>
+      </fields>
       <libsource lib="CustomSymbolLibrary" part="LT3092xSOT223" description="200mA 2-Terminal Programmable Current Source, SOT-223"/>
       <sheetpath names="/Current Source/" tstamps="/5CA92318/"/>
       <tstamp>5CA94214</tstamp>
     </comp>
-    <comp ref="R9">
+    <comp ref="R7">
       <value>200</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.17639484.464475340.1555178862-441347304.1541859637&amp;_gac=1.138079748.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447602</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Current Source/" tstamps="/5CA92318/"/>
       <tstamp>5CA977B5</tstamp>
     </comp>
-    <comp ref="R10">
-      <value>47K</value>
-      <datasheet>~</datasheet>
+    <comp ref="R8">
+      <value>47K5</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.247858050.464475340.1555178862-441347304.1541859637&amp;_gac=1.19130252.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447665</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Current Source/" tstamps="/5CA92318/"/>
       <tstamp>5CA98102</tstamp>
     </comp>
-    <comp ref="R11">
-      <value>73K</value>
-      <datasheet>~</datasheet>
+    <comp ref="R9">
+      <value>73K2</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1911175.pdf?_ga=2.20909245.464475340.1555178862-441347304.1541859637&amp;_gac=1.216794530.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2303742</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Current Source/" tstamps="/5CA92318/"/>
       <tstamp>5CA98770</tstamp>
     </comp>
     <comp ref="D2">
       <value>MBRS340T3G</value>
-      <datasheet>~</datasheet>
+      <footprint>CustomFootprintLibrary:D_SMC_Handsoldering</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2353896.pdf?_ga=2.257305614.464475340.1555178862-441347304.1541859637&amp;_gac=1.50064274.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">9557377</field>
+      </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/Current Source/" tstamps="/5CA92318/"/>
       <tstamp>5CA993D4</tstamp>
     </comp>
-    <comp ref="C9">
+    <comp ref="C11">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAA5E6C</tstamp>
     </comp>
-    <comp ref="U3">
+    <comp ref="U4">
       <value>LT3081_TO-220</value>
+      <footprint>Package_TO_SOT_THT:TO-220F-7_P2.54x3.7mm_StaggerEven_Lead3.5mm_Vertical</footprint>
+      <datasheet>http://www.linear.com/docs/43256</datasheet>
+      <fields>
+        <field name="Digikey Code">LT3081ET7#PBF-ND</field>
+      </fields>
       <libsource lib="CustomSymbolLibrary" part="LT3081_TO-220" description="Linear regulator, 1.5A low dropout"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAA8266</tstamp>
     </comp>
-    <comp ref="R12">
+    <comp ref="R13">
       <value>10K 1%</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAAA3EB</tstamp>
     </comp>
-    <comp ref="C11">
+    <comp ref="C18">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAABA41</tstamp>
     </comp>
-    <comp ref="C12">
+    <comp ref="C20">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAAC37F</tstamp>
     </comp>
-    <comp ref="C13">
+    <comp ref="C22">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAAC95C</tstamp>
     </comp>
-    <comp ref="R13">
+    <comp ref="R17">
       <value>10K</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAAD02A</tstamp>
     </comp>
-    <comp ref="R14">
+    <comp ref="R19">
       <value>15m 1%</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">P19200CT-ND</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAAFA34</tstamp>
     </comp>
-    <comp ref="C10">
+    <comp ref="C13">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CAA6356</tstamp>
     </comp>
-    <comp ref="C29">
+    <comp ref="C14">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB0492E</tstamp>
     </comp>
-    <comp ref="R19">
+    <comp ref="R11">
       <value>1K 1%</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.189204526.464475340.1555178862-441347304.1541859637&amp;_gac=1.183224978.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447587</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB087AE</tstamp>
     </comp>
-    <comp ref="U4">
+    <comp ref="U3">
       <value>LT3081_TO-220</value>
+      <footprint>Package_TO_SOT_THT:TO-220F-7_P2.54x3.7mm_StaggerEven_Lead3.5mm_Vertical</footprint>
+      <datasheet>http://www.linear.com/docs/43256</datasheet>
+      <fields>
+        <field name="Digikey Code">LT3081ET7#PBF-ND</field>
+      </fields>
       <libsource lib="CustomSymbolLibrary" part="LT3081_TO-220" description="Linear regulator, 1.5A low dropout"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB49120</tstamp>
     </comp>
-    <comp ref="R15">
+    <comp ref="R12">
       <value>10K 1%</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB4912F</tstamp>
     </comp>
-    <comp ref="C16">
+    <comp ref="C17">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB4913F</tstamp>
     </comp>
-    <comp ref="C17">
+    <comp ref="C19">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB49145</tstamp>
     </comp>
-    <comp ref="C18">
+    <comp ref="C21">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB4914B</tstamp>
     </comp>
     <comp ref="R16">
       <value>10K</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB49151</tstamp>
     </comp>
-    <comp ref="R17">
+    <comp ref="R18">
       <value>15m 1%</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C313.pdf</datasheet>
+      <fields>
+        <field name="Digikey code">P19200CT-ND</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB4916E</tstamp>
     </comp>
-    <comp ref="C14">
+    <comp ref="C12">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB4917E</tstamp>
     </comp>
     <comp ref="C15">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB4919E</tstamp>
     </comp>
-    <comp ref="R20">
+    <comp ref="R10">
       <value>1K 1%</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.189204526.464475340.1555178862-441347304.1541859637&amp;_gac=1.183224978.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447587</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CB491AF</tstamp>
     </comp>
-    <comp ref="C30">
-      <value>10pF</value>
-      <datasheet>~</datasheet>
+    <comp ref="C16">
+      <value>10000pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1859359.pdf?_ga=2.248012930.464475340.1555178862-441347304.1541859637&amp;_gac=1.245572912.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">9406352</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CBE0CE0</tstamp>
     </comp>
-    <comp ref="R2">
+    <comp ref="R14">
       <value>3K3</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2310790.pdf?_ga=2.13634354.464475340.1555178862-441347304.1541859637&amp;_gac=1.45271696.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">1469911</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CBEB800</tstamp>
     </comp>
-    <comp ref="R1">
+    <comp ref="R15">
       <value>100</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.253034636.464475340.1555178862-441347304.1541859637&amp;_gac=1.213591584.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447552</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Linear Regulator 1/" tstamps="/5CAA5A19/"/>
       <tstamp>5CBEBCBF</tstamp>
     </comp>
     <comp ref="C23">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/-Ve Power Supply/" tstamps="/5CAB0D5A/"/>
       <tstamp>5CAB0F95</tstamp>
     </comp>
-    <comp ref="U6">
+    <comp ref="U5">
       <value>LTC1983-3</value>
       <footprint>Package_TO_SOT_SMD:TSOT-23-6_HandSoldering</footprint>
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/1983fc.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">LTC1983ES6-3#TRPBFCT-ND</field>
+      </fields>
       <libsource lib="CustomSymbolLibrary" part="LTC1983-3" description=""/>
       <sheetpath names="/-Ve Power Supply/" tstamps="/5CAB0D5A/"/>
       <tstamp>5CAB2E09</tstamp>
     </comp>
     <comp ref="C24">
       <value>1uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189091.pdf?_ga=2.8850352.464475340.1555178862-441347304.1541859637&amp;_gac=1.217835810.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2688485</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/-Ve Power Supply/" tstamps="/5CAB0D5A/"/>
       <tstamp>5CAB454B</tstamp>
     </comp>
-    <comp ref="R18">
+    <comp ref="R20">
       <value>220</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2563624.pdf?_ga=2.223356190.464475340.1555178862-441347304.1541859637&amp;_gac=1.41626134.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2447606</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/-Ve Power Supply/" tstamps="/5CAB0D5A/"/>
       <tstamp>5CAB607A</tstamp>
     </comp>
     <comp ref="C25">
       <value>10uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2079187.pdf?_ga=2.184442915.464475340.1555178862-441347304.1541859637&amp;_gac=1.7154438.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2611943</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/-Ve Power Supply/" tstamps="/5CAB0D5A/"/>
       <tstamp>5CAB708B</tstamp>
@@ -543,56 +757,125 @@
     <comp ref="Q3">
       <value>2N3904</value>
       <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <datasheet>http://www.farnell.com/datasheets/2284140.pdf?_ga=2.121420173.44717249.1558464473-287732444.1556558561</datasheet>
+      <fields>
+        <field name="Farnell Code">1700648</field>
+      </fields>
       <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
       <sheetpath names="/-Ve Power Supply/" tstamps="/5CAB0D5A/"/>
       <tstamp>5CAB8B1E</tstamp>
     </comp>
-    <comp ref="U7">
-      <value>INA260</value>
-      <libsource lib="CustomSymbolLibrary" part="INA260" description=""/>
+    <comp ref="C26">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189091.pdf?_ga=2.8850352.464475340.1555178862-441347304.1541859637&amp;_gac=1.217835810.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2688485</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
-      <tstamp>5CAC2CB4</tstamp>
-    </comp>
-    <comp ref="R21">
-      <value>2K2</value>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
-      <tstamp>5CAC7EFC</tstamp>
+      <tstamp>5CC517C4</tstamp>
     </comp>
     <comp ref="R22">
       <value>2K2</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
       <tstamp>5CAC912C</tstamp>
     </comp>
-    <comp ref="C26">
-      <value>1uF</value>
+    <comp ref="R21">
+      <value>2K2</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
-      <tstamp>5CC517C4</tstamp>
+      <tstamp>5CAC7EFC</tstamp>
     </comp>
-    <comp ref="C19">
+    <comp ref="U6">
+      <value>INA260</value>
+      <footprint>Package_SO:TSSOP-16_4.4x5mm_P0.65mm</footprint>
+      <datasheet>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fina260</datasheet>
+      <fields>
+        <field name="Digikey Code">296-47777-1-ND</field>
+      </fields>
+      <libsource lib="CustomSymbolLibrary" part="INA260" description=""/>
+      <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
+      <tstamp>5CAC2CB4</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x06</value>
+      <footprint>Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/022272061_sd.pdf</datasheet>
+      <fields>
+        <field name="Digikey Code">WM4115-ND + WM1579-ND + WM2623-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
+      <tstamp>5CD90C86</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>10K 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
+      <tstamp>5CD958CA</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>10K 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
+      <tstamp>5CD9AC96</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>10K 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2189453.pdf?_ga=2.218517404.464475340.1555178862-441347304.1541859637&amp;_gac=1.50055954.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2694096</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Output Monitoring/" tstamps="/5CAC1458/"/>
+      <tstamp>5CD9B615</tstamp>
+    </comp>
+    <comp ref="C27">
       <value>0.33uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.8331319.464475340.1555178862-441347304.1541859637&amp;_gac=1.238225716.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320844</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Low Voltage Supply/" tstamps="/5CAA5FE8/"/>
       <tstamp>5CAA62A2</tstamp>
     </comp>
-    <comp ref="U5">
+    <comp ref="U7">
       <value>LM7805_TO220</value>
       <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
-      <datasheet>http://www.fairchildsemi.com/ds/LM/LM7805.pdf</datasheet>
+      <datasheet>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=UA78&amp;fileType=pdf</datasheet>
+      <fields>
+        <field name="Farnell Code">2323602</field>
+      </fields>
       <libsource lib="Regulator_Linear" part="LM7805_TO220" description="Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"/>
       <sheetpath names="/Low Voltage Supply/" tstamps="/5CAA5FE8/"/>
       <tstamp>5CAA760D</tstamp>
     </comp>
-    <comp ref="C20">
+    <comp ref="C28">
       <value>0.1uF</value>
-      <datasheet>~</datasheet>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1901289.pdf?_ga=2.217959571.464475340.1555178862-441347304.1541859637&amp;_gac=1.205178532.1554891125.EAIaIQobChMI16fD9tLD4QIVz5TtCh3QQglqEAAYAiAAEgKKrvD_BwE</datasheet>
+      <fields>
+        <field name="Farnell Code">2320839</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Low Voltage Supply/" tstamps="/5CAA5FE8/"/>
       <tstamp>5CAAB531</tstamp>
@@ -614,37 +897,44 @@
         <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x03">
-      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
-        <pin num="3" name="Pin_3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x04">
-      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x04</field>
+        <field name="Value">Conn_01x06</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
         <pin num="3" name="Pin_3" type="passive"/>
         <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x08">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="CustomSymbolLibrary" part="INA260">
@@ -685,7 +975,6 @@
         <pin num="5" name="TEMP" type="output"/>
         <pin num="6" name="IN" type="input"/>
         <pin num="7" name="NC" type="output"/>
-        <pin num="8" name="TAB" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="CustomSymbolLibrary" part="LT3092xSOT223">
@@ -703,7 +992,6 @@
         <pin num="1" name="~" type="passive"/>
         <pin num="2" name="~" type="passive"/>
         <pin num="3" name="~" type="passive"/>
-        <pin num="Tab" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="CustomSymbolLibrary" part="LTC1624CS8">
@@ -808,6 +1096,21 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="Net-Tie_2">
+      <description>Net tie, 2 pins</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Net*Tie*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">NT</field>
+        <field name="Value">Net-Tie_2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="R">
       <description>Resistor</description>
       <docs>~</docs>
@@ -905,25 +1208,29 @@
         <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Transistor_FET" part="2N7000">
+    <libpart lib="Transistor_FET" part="BUZ11">
       <aliases>
-        <alias>TP0610L</alias>
-        <alias>VP0610L</alias>
+        <alias>IRF3205</alias>
+        <alias>IRF540N</alias>
+        <alias>IRF740</alias>
+        <alias>IRLB8721PBF</alias>
+        <alias>IRLZ34N</alias>
+        <alias>IRLZ44N</alias>
       </aliases>
-      <description>0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92</description>
-      <docs>https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf</docs>
+      <description>30A Id, 50V Vds, N-Channel Power MOSFET, TO-220</description>
+      <docs>http://www.fairchildsemi.com/ds/BU/BUZ11.pdf</docs>
       <footprints>
-        <fp>TO?92*</fp>
+        <fp>TO?220*</fp>
       </footprints>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">2N7000</field>
-        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Value">BUZ11</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
       </fields>
       <pins>
-        <pin num="1" name="S" type="passive"/>
-        <pin num="2" name="G" type="input"/>
-        <pin num="3" name="D" type="passive"/>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
       </pins>
     </libpart>
   </libparts>
@@ -948,262 +1255,281 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="J1" pin="1"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="R13" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="U7" pin="11"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="R12" pin="2"/>
-      <node ref="U7" pin="4"/>
-      <node ref="C29" pin="2"/>
-      <node ref="R19" pin="2"/>
-      <node ref="U7" pin="5"/>
-      <node ref="U7" pin="6"/>
-      <node ref="C9" pin="2"/>
-      <node ref="C26" pin="2"/>
-      <node ref="R15" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="C17" pin="2"/>
-      <node ref="C18" pin="2"/>
-      <node ref="R16" pin="2"/>
+    <net code="1" name="GNDPWR">
       <node ref="J2" pin="1"/>
-      <node ref="C27" pin="1"/>
-      <node ref="U6" pin="5"/>
-      <node ref="C23" pin="2"/>
-      <node ref="J8" pin="2"/>
-      <node ref="J7" pin="3"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="C25" pin="2"/>
-      <node ref="C7" pin="1"/>
-      <node ref="U5" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="J6" pin="1"/>
-      <node ref="R20" pin="2"/>
-      <node ref="J4" pin="1"/>
-      <node ref="D1" pin="2"/>
-      <node ref="C30" pin="2"/>
-      <node ref="U1" pin="4"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C4" pin="1"/>
+      <node ref="NT1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U7" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C27" pin="2"/>
     </net>
     <net code="2" name="VCC">
-      <node ref="C4" pin="2"/>
-      <node ref="U1" pin="8"/>
-      <node ref="J1" pin="2"/>
+      <node ref="J2" pin="2"/>
       <node ref="C1" pin="1"/>
       <node ref="C2" pin="1"/>
-      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U7" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C27" pin="1"/>
       <node ref="U2" pin="3"/>
-      <node ref="C28" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U5" pin="1"/>
-      <node ref="C19" pin="1"/>
     </net>
     <net code="3" name="/Linear Regulator 1/REGin">
-      <node ref="R7" pin="1"/>
-      <node ref="C29" pin="1"/>
-      <node ref="R5" pin="1"/>
-      <node ref="C15" pin="1"/>
-      <node ref="C6" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="L1" pin="2"/>
-      <node ref="C9" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="U4" pin="6"/>
-      <node ref="U3" pin="6"/>
+      <node ref="C13" pin="1"/>
       <node ref="C14" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U4" pin="6"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C10" pin="1"/>
     </net>
     <net code="4" name="/T1OUT">
-      <node ref="U3" pin="5"/>
-      <node ref="J5" pin="1"/>
-      <node ref="R12" pin="1"/>
+      <node ref="U4" pin="5"/>
+      <node ref="J4" pin="5"/>
+      <node ref="R13" pin="1"/>
     </net>
     <net code="5" name="/IMON">
-      <node ref="R20" pin="1"/>
-      <node ref="J4" pin="3"/>
-      <node ref="R19" pin="1"/>
+      <node ref="R10" pin="1"/>
       <node ref="U3" pin="3"/>
+      <node ref="J4" pin="6"/>
+      <node ref="R11" pin="1"/>
       <node ref="U4" pin="3"/>
     </net>
-    <net code="6" name="/T2OUT">
-      <node ref="U4" pin="5"/>
-      <node ref="R15" pin="1"/>
-      <node ref="J5" pin="2"/>
-    </net>
-    <net code="7" name="/ON-OFF">
-      <node ref="D2" pin="2"/>
-      <node ref="U4" pin="2"/>
-      <node ref="R11" pin="2"/>
-      <node ref="R10" pin="2"/>
-      <node ref="U3" pin="2"/>
-      <node ref="R9" pin="1"/>
-      <node ref="J2" pin="2"/>
+    <net code="6" name="/REG5V">
+      <node ref="U6" pin="10"/>
+      <node ref="J6" pin="6"/>
+      <node ref="J6" pin="4"/>
       <node ref="J6" pin="2"/>
-      <node ref="C30" pin="1"/>
-    </net>
-    <net code="8" name="/ICTRL-">
-      <node ref="R1" pin="1"/>
-      <node ref="J3" pin="1"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="9" name="/ICTRL+">
-      <node ref="R14" pin="2"/>
-      <node ref="J3" pin="2"/>
-      <node ref="R13" pin="1"/>
-      <node ref="C13" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="C11" pin="1"/>
-      <node ref="U3" pin="8"/>
-      <node ref="U3" pin="4"/>
-      <node ref="R2" pin="1"/>
-    </net>
-    <net code="10" name="/REG5V">
-      <node ref="R21" pin="1"/>
-      <node ref="U6" pin="6"/>
-      <node ref="U6" pin="1"/>
-      <node ref="C23" pin="1"/>
-      <node ref="J7" pin="4"/>
-      <node ref="U5" pin="3"/>
-      <node ref="R22" pin="1"/>
-      <node ref="C20" pin="1"/>
-      <node ref="U7" pin="10"/>
-    </net>
-    <net code="11" name="/Current Source/CSout">
-      <node ref="R17" pin="1"/>
-      <node ref="U7" pin="1"/>
-      <node ref="R14" pin="1"/>
-      <node ref="R8" pin="2"/>
-      <node ref="U7" pin="2"/>
+      <node ref="C28" pin="1"/>
       <node ref="U7" pin="3"/>
-      <node ref="Q3" pin="3"/>
-      <node ref="D2" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="C23" pin="1"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U5" pin="6"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R21" pin="1"/>
     </net>
-    <net code="12" name="/SCL">
-      <node ref="R21" pin="2"/>
-      <node ref="U7" pin="9"/>
-      <node ref="J7" pin="1"/>
+    <net code="7" name="/Current Source/CSout">
+      <node ref="R19" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="U6" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U6" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="8" name="/Output Monitoring/POUT">
+      <node ref="U6" pin="16"/>
+      <node ref="U6" pin="15"/>
+      <node ref="U6" pin="14"/>
+      <node ref="U6" pin="12"/>
+      <node ref="C26" pin="1"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="9" name="/TCASEOUT">
+      <node ref="J6" pin="1"/>
+      <node ref="R24" pin="2"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="10" name="/TBROUT">
+      <node ref="J4" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="J6" pin="3"/>
+    </net>
+    <net code="11" name="/TMOSOUT">
+      <node ref="R23" pin="2"/>
+      <node ref="J6" pin="5"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="12" name="/T2OUT">
+      <node ref="R12" pin="1"/>
+      <node ref="U3" pin="5"/>
+      <node ref="J4" pin="4"/>
     </net>
     <net code="13" name="/SDA">
-      <node ref="U7" pin="8"/>
+      <node ref="J4" pin="8"/>
       <node ref="R22" pin="2"/>
-      <node ref="J7" pin="2"/>
+      <node ref="U6" pin="8"/>
     </net>
-    <net code="14" name="/VMON">
-      <node ref="U7" pin="12"/>
-      <node ref="U7" pin="14"/>
-      <node ref="U7" pin="15"/>
-      <node ref="J8" pin="1"/>
-      <node ref="C26" pin="1"/>
-      <node ref="U7" pin="16"/>
-      <node ref="J4" pin="2"/>
+    <net code="14" name="/SCL">
+      <node ref="J4" pin="7"/>
+      <node ref="U6" pin="9"/>
+      <node ref="R21" pin="2"/>
     </net>
-    <net code="15" name="Net-(C5-Pad2)">
-      <node ref="C5" pin="2"/>
-      <node ref="U1" pin="5"/>
+    <net code="15" name="/ICTRL-">
+      <node ref="R15" pin="1"/>
+      <node ref="R14" pin="2"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="16" name="/ICTRL+">
+      <node ref="R19" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="R14" pin="1"/>
+      <node ref="U4" pin="4"/>
+      <node ref="C18" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="17" name="GNDS">
+      <node ref="R11" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="J3" pin="5"/>
+      <node ref="R10" pin="2"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="NT1" pin="2"/>
+      <node ref="U6" pin="6"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U6" pin="4"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U6" pin="11"/>
+      <node ref="R1" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="U5" pin="5"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="2"/>
+    </net>
+    <net code="18" name="/ON-OFF">
+      <node ref="R7" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="J3" pin="6"/>
+      <node ref="R9" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C16" pin="1"/>
+    </net>
+    <net code="19" name="Net-(C7-Pad2)">
       <node ref="L1" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="C7" pin="2"/>
       <node ref="D1" pin="1"/>
-      <node ref="Q1" pin="1"/>
+      <node ref="U1" pin="5"/>
     </net>
-    <net code="16" name="Net-(C5-Pad1)">
+    <net code="20" name="Net-(C7-Pad1)">
       <node ref="U1" pin="7"/>
-      <node ref="C5" pin="1"/>
+      <node ref="C7" pin="1"/>
     </net>
-    <net code="17" name="Net-(C3-Pad1)">
+    <net code="21" name="Net-(C3-Pad1)">
       <node ref="C3" pin="1"/>
       <node ref="U1" pin="2"/>
     </net>
-    <net code="18" name="Net-(C3-Pad2)">
-      <node ref="R3" pin="1"/>
+    <net code="22" name="Net-(C3-Pad2)">
       <node ref="C3" pin="2"/>
+      <node ref="R1" pin="1"/>
     </net>
-    <net code="19" name="Net-(Q1-Pad2)">
-      <node ref="Q1" pin="2"/>
+    <net code="23" name="Net-(Q1-Pad1)">
       <node ref="U1" pin="6"/>
+      <node ref="Q1" pin="1"/>
     </net>
-    <net code="20" name="Net-(C6-Pad2)">
-      <node ref="C6" pin="2"/>
-      <node ref="R5" pin="2"/>
+    <net code="24" name="Net-(C8-Pad2)">
       <node ref="Q2" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C8" pin="2"/>
     </net>
-    <net code="21" name="Net-(Q2-Pad2)">
-      <node ref="R7" pin="2"/>
+    <net code="25" name="Net-(Q2-Pad2)">
+      <node ref="R6" pin="1"/>
+      <node ref="R5" pin="2"/>
       <node ref="Q2" pin="2"/>
+    </net>
+    <net code="26" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="27" name="Net-(C4-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C4" pin="2"/>
+      <node ref="Q2" pin="3"/>
+    </net>
+    <net code="28" name="Net-(R7-Pad2)">
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="29" name="Net-(R8-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="R9" pin="1"/>
       <node ref="R8" pin="1"/>
     </net>
-    <net code="22" name="Net-(C28-Pad2)">
-      <node ref="U1" pin="1"/>
-      <node ref="C28" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="Q1" pin="3"/>
-    </net>
-    <net code="23" name="Net-(C27-Pad2)">
-      <node ref="U1" pin="3"/>
-      <node ref="R6" pin="1"/>
-      <node ref="Q2" pin="3"/>
-      <node ref="C27" pin="2"/>
-    </net>
-    <net code="24" name="Net-(R9-Pad2)">
-      <node ref="U2" pin="2"/>
-      <node ref="R9" pin="2"/>
-      <node ref="U2" pin="Tab"/>
-    </net>
-    <net code="25" name="Net-(R10-Pad1)">
-      <node ref="U2" pin="1"/>
-      <node ref="R10" pin="1"/>
-      <node ref="R11" pin="1"/>
-    </net>
-    <net code="26" name="Net-(U3-Pad7)">
-      <node ref="U3" pin="7"/>
-    </net>
-    <net code="27" name="Net-(U4-Pad7)">
+    <net code="30" name="Net-(U4-Pad7)">
       <node ref="U4" pin="7"/>
     </net>
-    <net code="28" name="Net-(C16-Pad1)">
-      <node ref="U4" pin="4"/>
-      <node ref="R16" pin="1"/>
-      <node ref="R17" pin="2"/>
-      <node ref="C18" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="C17" pin="1"/>
-      <node ref="U4" pin="8"/>
+    <net code="31" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
     </net>
-    <net code="29" name="Net-(R1-Pad2)">
-      <node ref="R1" pin="2"/>
+    <net code="32" name="Net-(C17-Pad1)">
+      <node ref="C17" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="33" name="Net-(R15-Pad2)">
       <node ref="U4" pin="1"/>
+      <node ref="R15" pin="2"/>
       <node ref="U3" pin="1"/>
     </net>
-    <net code="30" name="Net-(C24-Pad2)">
+    <net code="34" name="Net-(C24-Pad2)">
       <node ref="C24" pin="2"/>
-      <node ref="U6" pin="4"/>
+      <node ref="U5" pin="4"/>
     </net>
-    <net code="31" name="Net-(Q3-Pad1)">
-      <node ref="R18" pin="1"/>
+    <net code="35" name="Net-(Q3-Pad1)">
       <node ref="Q3" pin="1"/>
+      <node ref="R20" pin="1"/>
     </net>
-    <net code="32" name="Net-(C25-Pad1)">
-      <node ref="R18" pin="2"/>
+    <net code="36" name="Net-(C25-Pad1)">
+      <node ref="U5" pin="2"/>
       <node ref="C25" pin="1"/>
-      <node ref="U6" pin="2"/>
+      <node ref="R20" pin="2"/>
     </net>
-    <net code="33" name="Net-(C24-Pad1)">
+    <net code="37" name="Net-(C24-Pad1)">
       <node ref="C24" pin="1"/>
-      <node ref="U6" pin="3"/>
+      <node ref="U5" pin="3"/>
     </net>
-    <net code="34" name="Net-(U7-Pad13)">
-      <node ref="U7" pin="13"/>
+    <net code="38" name="Net-(U6-Pad13)">
+      <node ref="U6" pin="13"/>
     </net>
-    <net code="35" name="Net-(U7-Pad7)">
-      <node ref="U7" pin="7"/>
+    <net code="39" name="Net-(U6-Pad7)">
+      <node ref="U6" pin="7"/>
     </net>
   </nets>
 </export>

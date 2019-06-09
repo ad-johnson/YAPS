@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
 Title "YAPS - Regulated Power Supply"
-Date "2019-05-26"
-Rev "0.1"
+Date "2019-06-08"
+Rev "1.1"
 Comp "Andrew Johnson"
 Comment1 ""
 Comment2 ""
@@ -55,7 +55,7 @@ AR Path="/5CAA5A19/5CAA8266" Ref="U4"  Part="1"
 AR Path="/5CABF3A4/5CAA8266" Ref="U?"  Part="1" 
 F 0 "U4" H 6100 2765 50  0000 C CNN
 F 1 "LT3081_TO-220" H 6100 2674 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220F-7_P2.54x3.7mm_StaggerEven_Lead3.5mm_Vertical" H 5900 2100 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-7_P2.54x3.7mm_StaggerOdd_Lead3.5mm_Vertical" H 5900 2100 50  0001 C CNN
 F 3 "http://www.linear.com/docs/43256" H 5900 2100 50  0001 C CNN
 F 4 "LT3081ET7#PBF-ND" H 6100 2250 50  0001 C CNN "Digikey Code"
 	1    6100 2250
@@ -341,7 +341,7 @@ AR Path="/5CAA5A19/5CB49120" Ref="U3"  Part="1"
 AR Path="/5CABF3A4/5CB49120" Ref="U?"  Part="1" 
 F 0 "U3" H 6050 5015 50  0000 C CNN
 F 1 "LT3081_TO-220" H 6050 4924 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220F-7_P2.54x3.7mm_StaggerEven_Lead3.5mm_Vertical" H 5850 4350 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220F-7_P2.54x3.7mm_StaggerOdd_Lead3.5mm_Vertical" H 5850 4350 50  0001 C CNN
 F 3 "http://www.linear.com/docs/43256" H 5850 4350 50  0001 C CNN
 F 4 "LT3081ET7#PBF-ND" H 6050 4500 50  0001 C CNN "Digikey Code"
 	1    6050 4500

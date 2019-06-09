@@ -1,4 +1,4 @@
-15825828176038021
+15825831371813021
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42126,9 +42126,9 @@ SMD SMT ceramic resonator filter filter hand-soldering
 3
 3
 CustomFootprintLibrary
-Diode_Bridge_23.0x3.5x10.0mm_P5.0mm
-Vishay GBU rectifier package, 5.08mm pitch, see http://www.vishay.com/docs/88606/g3sba20.pdf
-Vishay GBU rectifier diode bridge
+Diode_Bridge_23.0x3.5mm_P5.0mm
+Taiwan Semiconductor GBU rectifier package, 5.08mm pitch, see http://www.farnell.com/datasheets/41665.pdf
+Taiwan Semiconductor GBU rectifier diode bridge
 0
 4
 4
