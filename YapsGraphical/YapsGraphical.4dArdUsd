@@ -1,0 +1,734 @@
+﻿Version     0.0
+Platform    4Duino-L
+PlatRes     240x320
+Depends
+end
+Options
+    Arduino_uSD
+    Speed                        9600
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  0
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+end
+Form
+    Name                         Form1
+    Alias                        Form1
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Meter
+    Name                         Meter1
+    Alias                        Case
+    Angle                        30
+    Backimage                    (None)
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             BLACK
+    Bevel.InnerHighlight         clBtnHighlight
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            clBtnShadow
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             Lowered
+    Bevel.Innerwidth             2
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                No
+    Caption                      Meters
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Arial
+    Font.Size                    10
+    Font.Style                   []
+    Height                       60
+    LabelOffsetX                 12
+    LabelOffsetY                 6
+    Labels                       0
+    Left                         90
+    Maxvalue                     16
+    Minvalue                     0
+    NeedleColor                  LIME
+    NeedleWidth                  2
+    Scale.Color1                 WHITE
+    Scale.Color2                 WHITE
+    Scale.Color3                 WHITE
+    Scale.Enlarge                7
+    Scale.Heightmax              12
+    Scale.Heightmin              5
+    Scale.Percent1               40
+    Scale.Percent2               25
+    Scale.Ticks                  30
+    Scale.Visible                Yes
+    Spacing                      5
+    Top                          -7
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Thermometer
+    Name                         Thermometer1
+    Alias                        Thermometer1
+    Caption                      ''
+    Color                        BLACK
+    ColorAfter                   RED
+    ColorBefore                  LIME
+    Direction                    Vertical
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Arial
+    Font.Size                    7
+    Font.Style                   []
+    Height                       80
+    Left                         -10
+    Scale.Color                  WHITE
+    Scale.Decimals               0
+    Scale.Heightmax              8
+    Scale.Heightmin              8
+    Scale.Max                    160
+    Scale.Min                    20
+    Scale.Offset                 20
+    Scale.Position               Before
+    Scale.ScaleType              Linear
+    Scale.SmallStep              10
+    Scale.Step                   60
+    Scale.Visible                Yes
+    Setpoint.Bitmap              (None)
+    Setpoint.Color               RED
+    Setpoint.Shape               Line
+    Setpoint.Value               80
+    Setpoint.Visible             No
+    ShowCaption                  No
+    Top                          150
+    Value.Bitmap                 (None)
+    Value.Color                  DEEPSKYBLUE
+    Value.Shape                  Triangle
+    Value.Value                  80
+    Value.Visible                No
+    Width                        50
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext2
+    Alias                        CaseCText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      °C
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         8
+    Top                          133
+    Transparent                  Yes
+    Width                        18
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext1
+    Alias                        VoltText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      V
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    20
+    Font.Style                   []
+    Height                       33
+    Left                         68
+    Top                          20
+    Transparent                  Yes
+    Width                        16
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext3
+    Alias                        AmpText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      A
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    20
+    Font.Style                   []
+    Height                       33
+    Left                         250
+    Top                          20
+    Transparent                  Yes
+    Width                        16
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits1
+    Alias                        Volts
+    Color                        BLACK
+    Decimals                     3
+    Digits                       5
+    Height                       35
+    LeadingZero                  Yes
+    Left                         8
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          60
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits2
+    Alias                        Amps
+    Color                        BLACK
+    Decimals                     3
+    Digits                       4
+    Height                       35
+    LeadingZero                  Yes
+    Left                         203
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          60
+    Width                        115
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Line
+    Name                         Line1
+    Alias                        Line1
+    Color                        SLATEGRAY
+    Pattern                      Solid
+    X1                           2
+    X2                           318
+    Y1                           100
+    Y2                           100
+end
+StaticText
+    Name                         Statictext4
+    Alias                        PowerText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Power:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         8
+    Top                          104
+    Transparent                  Yes
+    Width                        50
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits1
+    Alias                        PowerUnits
+    Bitmap                       (None)
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         64
+    Top                          109
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext5
+    Alias                        PowerDP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         82
+    Top                          106
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits2
+    Alias                        PowerFractions
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         87
+    Top                          109
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext6
+    Alias                        WattsText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      W
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         120
+    Top                          105
+    Transparent                  Yes
+    Width                        14
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext7
+    Alias                        iMonText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      iMon:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         203
+    Top                          104
+    Transparent                  Yes
+    Width                        40
+    WordWrap                     Yes
+end
+Line
+    Name                         Line2
+    Alias                        Line2
+    Color                        SLATEGRAY
+    Pattern                      Solid
+    X1                           2
+    X2                           318
+    Y1                           127
+    Y2                           127
+end
+CustomDigits
+    Name                         Customdigits3
+    Alias                        iMonUnits
+    Bitmap                       (None)
+    Digits                       1
+    LeadingZero                  Yes
+    Left                         248
+    Top                          109
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext8
+    Alias                        iMonDP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         257
+    Top                          106
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits4
+    Alias                        iMonFractions
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         262
+    Top                          109
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext9
+    Alias                        iMonAmpText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      A
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         293
+    Top                          105
+    Transparent                  Yes
+    Width                        11
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext10
+    Alias                        CaseText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Case:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         40
+    Top                          143
+    Transparent                  Yes
+    Width                        39
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext11
+    Alias                        RectifierText
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Rectifier:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         40
+    Top                          175
+    Transparent                  Yes
+    Width                        63
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext12
+    Alias                        MosfetText:
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Mosfet:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         40
+    Top                          207
+    Transparent                  Yes
+    Width                        52
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext13
+    Alias                        LT3081u4Text
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      LT3081-U4:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         175
+    Top                          175
+    Transparent                  Yes
+    Width                        86
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext14
+    Alias                        LT3081u3Text
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      LT3081-U3:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       19
+    Left                         175
+    Top                          143
+    Transparent                  Yes
+    Width                        86
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits5
+    Alias                        RectifierTempUnits
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         105
+    Top                          179
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits6
+    Alias                        CaseTempUnits
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         105
+    Top                          147
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits7
+    Alias                        MosfetTempUnits
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         105
+    Top                          211
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext15
+    Alias                        CaseDP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         132
+    Top                          144
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext16
+    Alias                        RectifierDP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         132
+    Top                          176
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext17
+    Alias                        MosfetDP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         132
+    Top                          208
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits8
+    Alias                        CaseTempFractions
+    Bitmap                       (None)
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         137
+    Top                          147
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits9
+    Alias                        RectifierTempFractions
+    Bitmap                       (None)
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         137
+    Top                          179
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits10
+    Alias                        MosfetTempFractions
+    Bitmap                       (None)
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         137
+    Top                          211
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits11
+    Alias                        LT3081U3TempFractions
+    Bitmap                       (None)
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         295
+    Top                          147
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits12
+    Alias                        LT3081U3TempUnits
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         263
+    Top                          147
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext18
+    Alias                        LT3081U3DP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         290
+    Top                          144
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits13
+    Alias                        LT3081U4TempUnits
+    Bitmap                       (None)
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         263
+    Top                          179
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext19
+    Alias                        LT3081U4DP
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      .
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         290
+    Top                          177
+    Transparent                  Yes
+    Width                        5
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits14
+    Alias                        LT3081U4TempFractions
+    Bitmap                       (None)
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         295
+    Top                          179
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
